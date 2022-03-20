@@ -53,13 +53,19 @@
 						<p>Whether you are curious about Me, want to talk about tools or technology or chat over chai!</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="https://formspree.io/f/mbjwkznv">
+								<form action="https://formspree.io/f/mbjwkznv" method="POST">
+									<label> Your email: <input type="email" name="email"></label>
+									<label> Your message: <textarea name="message"></textarea> </label>
+								<!-- your other form fields go here -->
+								<button type="submit">Send</button>
+								</form>
+								<!-- <form method="post" action="https://formspree.io/f/mbjwkznv">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
-								</form>
+								</form> -->
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
